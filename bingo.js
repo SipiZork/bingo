@@ -233,11 +233,11 @@ const nextNumber = () => {
 
 const randomBingoSlot = () => {
   for (let i = 0; i < 5; i++) {
-    const randomB = getRandomNumber(0, arrayB.length - 1);
-    const randomI = getRandomNumber(0, arrayI.length - 1);
-    const randomN = getRandomNumber(0, arrayN.length - 1);
-    const randomG = getRandomNumber(0, arrayG.length - 1);
-    const randomO = getRandomNumber(0, arrayO.length - 1);
+    const randomB = getRandomNumber(0, arrayB.length);
+    const randomI = getRandomNumber(0, arrayI.length);
+    const randomN = getRandomNumber(0, arrayN.length);
+    const randomG = getRandomNumber(0, arrayG.length);
+    const randomO = getRandomNumber(0, arrayO.length);
     const divB = document.querySelector(`#b-${i + 1}`);
     const divI = document.querySelector(`#i-${i + 1}`);
     const divN = document.querySelector(`#n-${i + 1}`);
