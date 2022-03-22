@@ -55,7 +55,7 @@ const getColor = (number) => {
       return 'red';
     } else if (number < 31) {
       return 'green';
-    } else if (number < 45) {
+    } else if (number < 46) {
       return 'yellow';
     } else if (number < 61) {
       return 'blue';
