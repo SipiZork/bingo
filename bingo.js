@@ -95,7 +95,7 @@ const controlGame = () => {
       buttonGame.innerHTML = 'Pause Game';
       gameTimer = setInterval(() => {
         nextNumber();
-      }, 2500);
+      }, 4000);
     }
   } else {
     gameStart = false;
