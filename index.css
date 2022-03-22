@@ -1,0 +1,253 @@
+body {
+  background-color: #152c2c;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.selected_numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.selected_numbers .slecected_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.selected_numbers .slecected_number.move {
+  -webkit-animation: from-left 1s 1 ease-in-out;
+          animation: from-left 1s 1 ease-in-out;
+}
+
+.selected_numbers .slecected_number.move-top {
+  -webkit-animation: from-top 1s 1 ease-in-out;
+          animation: from-top 1s 1 ease-in-out;
+}
+
+@-webkit-keyframes from-left {
+  0% {
+    left: -7rem;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes from-left {
+  0% {
+    left: -7rem;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes from-top {
+  0% {
+    top: -6rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes from-top {
+  0% {
+    top: -6rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.selected_numbers .slecected_number.red {
+  background-color: red;
+}
+
+.selected_numbers .slecected_number.yellow {
+  background-color: olive;
+}
+
+.selected_numbers .slecected_number.purple {
+  background-color: purple;
+}
+
+.selected_numbers .slecected_number.green {
+  background-color: green;
+}
+
+.selected_numbers .slecected_number.blue {
+  background-color: #2f2fe6;
+}
+
+.selected_numbers .slecected_number .letter {
+  font-size: 2rem;
+}
+
+.selected_numbers .slecected_number .number {
+  font-size: 2.5rem;
+}
+
+.bingo-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .1rem;
+}
+
+.bingo-grid .column {
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .1rem;
+}
+
+.bingo-grid .column div {
+  background-color: #5c5c5c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.bingo-grid .column div.bingo-grid-letter {
+  background-color: #027979;
+  height: 3rem;
+}
+
+.bingo-grid .column div.bingo-grid-letter.b {
+  background-color: red;
+}
+
+.bingo-grid .column div.bingo-grid-letter.i {
+  background-color: green;
+}
+
+.bingo-grid .column div.bingo-grid-letter.n {
+  background-color: olive;
+}
+
+.bingo-grid .column div.bingo-grid-letter.g {
+  background-color: #2f2fe6;
+}
+
+.bingo-grid .column div.bingo-grid-letter.o {
+  background-color: purple;
+}
+
+.bingo-grid .column div.bingo-grid-letter.transparent {
+  background-color: transparent;
+}
+
+.bingo-grid .column div.selected {
+  background-color: transparent;
+  color: black;
+}
+
+.bingo-grid .column div.selected:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  z-index: -3;
+  background-color: #5c5c5c;
+}
+
+.bingo-grid .column div.selected:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: #ffff48;
+}
+
+button {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  background-color: #028181;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: aqua;
+  color: black;
+}
+
+#bingo-result {
+  font-size: 1.4rem;
+}
+/*# sourceMappingURL=index.css.map */

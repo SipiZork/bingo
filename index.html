@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="bingo.js" defer></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Bingo</title>
+</head>
+<body>
+  <div class="selected_numbers">
+    <div class="slecected_number"><div class="letter" id="s-1-l"></div><div class="number" id="s-1"></div></div>
+    <div class="slecected_number"><div class="letter" id="s-2-l"></div><div class="number" id="s-2"></div></div>
+    <div class="slecected_number"><div class="letter" id="s-3-l"></div><div class="number" id="s-3"></div></div>
+    <div class="slecected_number"><div class="letter" id="s-4-l"></div><div class="number" id="s-4"></div></div>
+    <div class="slecected_number"><div class="letter" id="s-5-l"></div><div class="number" id="s-5"></div></div>
+  </div>
+  <div class="bingo-grid">
+    <div class="column" id="b">
+      <div class="bingo-grid-letter b">B</div>
+      <div class="bingo-field" id="b-1"></div>
+      <div class="bingo-field" id="b-2"></div>
+      <div class="bingo-field" id="b-3"></div>
+      <div class="bingo-field" id="b-4"></div>
+      <div class="bingo-field" id="b-5"></div>
+    </div>
+    <div class="column" id="i">
+      <div class="bingo-grid-letter i">I</div>
+      <div class="bingo-field" id="i-1"></div>
+      <div class="bingo-field" id="i-2"></div>
+      <div class="bingo-field" id="i-3"></div>
+      <div class="bingo-field" id="i-4"></div>
+      <div class="bingo-field" id="i-5"></div>
+    </div>
+    <div class="column" id="n">
+      <div class="bingo-grid-letter n">N</div>
+      <div class="bingo-field" id="n-1"></div>
+      <div class="bingo-field" id="n-2"></div>
+      <div class="bingo-field" id="n-3"></div>
+      <div class="bingo-field" id="n-4"></div>
+      <div class="bingo-field" id="n-5"></div>
+    </div>
+    <div class="column" id="g">
+      <div class="bingo-grid-letter g">G</div>
+      <div class="bingo-field" id="g-1"></div>
+      <div class="bingo-field" id="g-2"></div>
+      <div class="bingo-field" id="g-3"></div>
+      <div class="bingo-field" id="g-4"></div>
+      <div class="bingo-field" id="g-5"></div>
+    </div>
+    <div class="column" id="o">
+      <div class="bingo-grid-letter o">O</div>
+      <div class="bingo-field" id="o-1"></div>
+      <div class="bingo-field" id="o-2"></div>
+      <div class="bingo-field" id="o-3"></div>
+      <div class="bingo-field" id="o-4"></div>
+      <div class="bingo-field" id="o-5"></div>
+    </div>
+  </div>
+  <button id="bingo">Bingo</button>
+  <button id="game-button">Start Game</button>
+  <div id="bingo-result"></div>
+</body>
+</html>
